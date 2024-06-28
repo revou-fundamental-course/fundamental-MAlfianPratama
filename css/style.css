@@ -1,0 +1,73 @@
+    /*CSS*/
+
+main {
+    padding: 30px;
+    padding-top: 8px;
+}
+
+
+.logo-icon {
+    height: 55px;
+    width: 55px;
+    border: 1px solid;
+    border-radius: 30px;
+    background-image: url(/assets/logo\ mapzoll.jpg);
+    background-size: cover;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+nav>a{
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border: 1px solid;
+    border-radius: 80px;
+}
+
+.banner-container {
+    height: 355px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.icon-profile {
+    height: 80px;
+    width: 80px;
+    border: 1px solid;
+    /* picture profile style */
+    border-radius: 35px;
+    background-size: cover;
+}
+
+.icon-profile-1{
+    background-image: url();
+}
+
+.icon-profile-2{
+    background-image: url();
+}
+
+.icon-profile-3{
+    background-image: url();
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-item {
+    text-align: center;
+    flex: 1;
+    text-align: -webkit-center;
+}
+
+.divider{
+    flex: 2;
+}

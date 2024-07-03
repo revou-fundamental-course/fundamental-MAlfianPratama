@@ -1,0 +1,317 @@
+/* CSS Styling */
+
+body {
+    font-family: 'lato';
+    background-color: #fdfffdf5;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 29px;
+}
+
+b {
+    font-size: 19px;
+    font-weight:bold;
+}
+
+p {
+    margin-top: -15px;
+}
+
+
+/* Logo and menu*/
+.logo-icon {
+    height: 55px;
+    width: 55px;
+    border: 1px solid;
+    border-radius: 30px;
+    background-image: url(/assets/foto-saya-sendiri.jpg);
+    background-size: cover;
+    margin-bottom: 6px;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+/* menu */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky; */
+    top: 2px;
+    background-color: #bbd598;
+    border: 8px solid white;
+    border-bottom: 2px solid black;
+    border-left: 4px solid #bbd598;
+    border-right: 1px solid #bbd598;
+    border-top: 7px solid #bbd598;
+}
+    
+nav>a{
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 3px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 8px;
+    margin-left: -9px;
+    text-decoration: none;
+    color: black;
+    background-color: #fdfffdf5;
+    transition: background-color 1s, transform 1s;
+    transform: translate(19%, -1%);
+}
+
+nav>a:hover{
+    background-color: #5ec763;
+    transform: scale(1.1);
+    border: 2px solid rgb(190, 221, 54);
+    color: rgb(190, 221, 54);
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-container{
+        flex-direction: column;
+        position: relative;
+    }
+    
+    nav>a {
+        display: flex;
+        width: 178px;
+        justify-content: center;
+        margin-top: 3px;
+        margin-bottom: 9px;
+        margin-left: -75px;
+    }
+}
+
+
+/* Homeee */
+#home{
+    padding: 57px;
+    padding-top: 20px;
+}
+
+.banner-container {
+    width: 832px;
+    height: 565px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.slide-image {
+    width: 103%;
+    height: 94%;
+    position: absolute;
+    margin-left: -290px;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.slide-image img.active {
+    opacity: 1;
+}
+
+.slide-image img:not(.active) {
+    opacity: 0;
+}
+
+
+
+/* My profile style */
+main>#my-profile{
+    padding: 57px;
+    padding-top: 0px;
+    margin-block-start: -25px
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.icon-profile {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    /* picture profile style */
+    border-radius: 40%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 2s, transform 1s;
+    transform: translate(-1%, -10%);
+}
+
+.icon-profile:hover {
+    transform: scale(1.9);
+}
+
+.icon-profile-1{
+    background-image: url(/assets/pexels-photo-GBK.jpg);
+}
+
+.icon-profile-2{
+    background-image: url(/assets/pexels-photo-candiprambanan.jpg);
+}
+
+.icon-profile-3{
+    background-image: url(/assets/pexels-photo-bromoawan.jpg);
+}
+
+.profile-item {
+    flex: 7;
+    text-align: -webkit-center;
+    white-space-collapse: preserve-breaks;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.divider{
+    flex: 2;
+}
+
+
+/* Portofolio */
+.banner-container1 {
+    width: 100%;
+    height: 396px;
+}
+
+@media only screen and (max-width: 845px) {
+    .banner-container1 {
+        display: contents;
+    }
+
+}
+
+#portofolio{
+    background-color: #bbd598;
+    padding: 52px;
+    text-align: justify;
+    clear: both;
+}
+
+
+/* Massage */
+td {
+    padding: 10px;
+}
+
+th>a {
+    padding-left: 90px;
+    margin-inline: -5px;
+}
+
+th {
+    display: flex;
+    margin-block-end: -21px;
+    font-weight: 100;
+    margin-inline-start: 23px;
+}
+
+input[type="text"], input[type="date"] {
+    width: 150%;
+    padding: 10px;
+    padding-top: 7px;
+    margin-top: -7px;
+    border-radius: 4px;
+    border: 1px solid #221a1a;
+    margin-block-end: -8px;
+    height: 8px;
+    display: table; 
+    font: -webkit-control;
+}
+
+textarea {
+    width: 150%;
+    padding: 10px;
+    padding-top: 7px;
+    margin-top: -10px;
+    border-radius: 4px;
+    border: 1px solid #221a1a;
+    height: 120px;
+    min-height: -webkit-fill-available;
+    font: -webkit-control;
+}
+
+input[type="submit"] {
+    display: flex;
+    background-color: #bbd598;
+    color: black;
+    padding: 4px 190px;
+    border: 2px solid #60be64;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Lato';
+    transform: translate(0%, 18%);
+    font-size: 16px;
+    transition: background-color 2s, transform 1s;
+}
+
+input[type="submit"]:hover {
+    background-color: #5ec763;
+    transform: scale(1.0);
+    border: 3px solid rgb(190, 221, 54);
+    color: rgb(190, 221, 54);
+}
+
+/* Button submit */
+#result {
+    display: flex;
+    margin-top: -250px;
+    padding: 29px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    float: inline-end;
+    font-size: 15px;
+    font-family: 'Lato';
+    min-inline-size: -webkit-fill-available;
+    margin-left: 461px;
+    border-left-width: thick;
+}
+
+@media only screen and (max-width: 780px) {
+    #result {
+        margin-top: 36px;
+        margin-left: 0px;
+    }
+
+    input[type="text"], input[type="date"], input[type="submit"], textarea, th {
+        margin-left: -15px;
+    }
+
+    th>a {
+        margin-inline: 9px;
+        padding-left: 65px;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .slide-image {
+        display: flex;
+    }
+}
+
+/* Footer tercinta */
+footer {
+    background-color: #bbd598;
+    padding: 20px;
+    text-align: center;
+    color: #2e2e2e;
+    clear: both;
+}

@@ -3,70 +3,143 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Alfian</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Muhammad Alfian Pratama</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-    <hr/>
 <body>
     <header class="nav-container">
+    <section id="logo-icon">
         <div class="logo-icon"></div>
-    
+    </section>
         <nav>
             <a href="#home">Home</a>
-            <a href="#my-profile">My Profile</a>
-            <a>Portofolio</a>
-            <a>Massage</a>
+            <a href="#my-profile">Favorite City</a>
+            <a href="#portofolio">Achievements</a>
+            <a href="#massage">Massage</a>
         </nav>
     </header>
-    
-    <hr/>
     <main>
-    
+        
     <!-- Home -->
-    <section>
+    <section id="home">
         <header>
-            <h1>Hi User, Welcome to my Website</h1>
+            <h1>Hi <span id="user">User</span>, Welcome to my Website</h1>
         </header>
         
         <article>
-            <p>Ini adalah website portofolio saya</p>
-            <div class="banner-container"></div>
+            <p> This is Alfian's training Website</p>
+            <div class="banner-container">
+                <div class="slide-image">
+                    <img src="/assets/domba-1.jpg" alt="Image 1">
+                    <img src="/assets/pexels-photo-bromojeep.jpg" alt="Image 2">
+                    <img src="/assets/pexels-photo-terasering.jpg" alt="Image 3">
+                    <img src="/assets/unnamedP5.jpg" alt="Image 4">
+                    <img src="/assets/futsal-smasm11.jpg" alt="Image 5">
+                    <img src="/assets/pexels-photo-candiprambanan.jpg" alt="Image 6">
+                    <img src="/assets/pexels-photo-sapii2.jpg" alt="Image 7">
+                    <img src="/assets/perpisahanX6.jpg" alt="Image 8">
+                    <img src="/assets/unnamedP5.jpg" alt="Image 9">
+                    <img src="/assets/futsal-smasm11.jpg" alt="Image 10">
+                </div>
+            </div>
         </article>
     </section>
-    <hr/>
 
     <!-- My Profile -->
-    <section id="my-profile" id="home" id="portofolio"> 
+    <section id="my-profile" > 
         <header>
-            <h1>My Profile</h1>
+            <h1>Favorite City</h1>
         </header>
         
         <article class="profile-content">
             <div class="profile-item">
-                <div class="icon-profile icon-profile-1"></div>
-                <p>Bandung</p>
+                <button class="icon-profile icon-profile-1" id="button-1" onclick="profileClass(1)"></button>
+                <b>Jakarta</b>
             </div>
             
             <div class="profile-item">
-                <div class="icon-profile icon-profile-2"></div>
-                <p>Bandung</p>
+                <button class="icon-profile icon-profile-2" id="button-2" onclick="profileClass(2)"></button>
+                <b>Yogyakarta</b>
             </div>
             
             <div class="profile-item">
-                <div class="icon-profile icon-profile-3"></div>
-                <p>Bandung</p>
+                <button class="icon-profile icon-profile-3" id="button-3" onclick="profileClass(3)"></button>
+                <b>Bromo</b>
             </div>
-
             <div class="divider"></div>
         </article>
     </section>
+
     <!-- Portofolio -->
-    
-    <!-- Massage -->
-    </main>
-    
-    
-</body>
+    <section id="portofolio">
+        <header>
+            <h1>Achievements</h1>
+        </header>
+        <article>
+            <p> These are my achievements for 18 years (now)</p>
+            <p> Introduction, Explanation, and Conslusion </p>
+            <div class="banner-container1">
+                <br>
+                <p style="font-size: 18px;">
+                    Hii! my name is Muhammad Alfian Pratama is an 18 year old high school student at SMAS Muhammadiyah 11 Jakarta. 
+                    I searching new activities and interesting to pursue at the high school level. It is important to excel academically and to actively seek opportunities for personal development and enrichment outside of traditional academic areas. 
+                    Engaging in new activities can provide valuable skills such as teamwork, leadership, creativity, and critical thinking, which are essential in the 21st century. 
+                    I make decision to explore new activities demonstrates proactive approach to self-improvement and personal growth. 
+                    By seeking out new opportunities, i'm not only enriches at high school experience but i prepares for future success. 
+                    Overall, its my decision to explore new activities and interests at the high school level is commendable and reflects a proactive attitude that will benefit academically and personally in the long run.
+                </p>
+                <br>
+                <p style="font-size: 18px;"> In this year, I had the honor of participating in the Olympics and receiving several awards and certificates that I am incredibly proud of.
+                Among them, I was awarded a gold medal for my proficiency in geography, a silver medal for my skills in informatics, and a bronze medal for my achievements in English.
+                Looking towards the future, my aspirations include pursuing higher education at a public university where I can continue to excel in my academic pursuits.
+                The awards and certificates from the Olympics in 2024 serve as a testament to my capabilities and drive to make a positive impact in the world.
+                With determination and perseverance, I am confident that I will continue to strive for excellence and contribute meaningfully to the academic community and beyond.</p>
+            
+            </div>
+        </article>
+    </section>
+        
+<!-- Massage -->
+<section style="margin-top: -58px; padding: 52px;">
+    <header>
+        <h1>Massage</h1>
+    </header>
+    <article>
+        <p> Give us your opinion about this website below ! </p>
+    </article>
+        <form>
+            <table id="my-table">
+                    <tr>
+                    <th>Name</th>
+                    <th><a>:</a></th>
+                    <td><input type="text" id="name" name="name" placeholder="Insert your name" required></td>
+                </tr>
+                <tr>
+                    <th>Date</th>
+                    <th><a>:</a></th>
+                    <td><input type="date" id="date" name="date" required ></td>
+                </tr>
+                <tr>
+                    <th>Message</th>
+                    <th><a>:</a></th>
+                    <td><textarea type="text" id="massage" name="massage" placeholder="Insert your text" required></textarea></td>
+                </tr>
+            </table>
+        </form>
+                    <input type="submit" value="Submit" id="submit">
+                <div id="result"></div>
+                
+            </section>
+        </main>
+
+        <!-- ... (Footer) ... -->
+    <footer>
+        <p>&copy; 2024 <a href="https://www.instagram.com/malfianp_/" target="_blank" style="text-decoration: none;">Muhammad Alfian Pratama</a>. 
+        All rights reserved. <a href="https://www.instagram.com/revou_id/" target="_blank" style="text-decoration: none;"> RevoU </a> Fundamental Course to be Great ! </p>
+    </footer>
+        <script src="/js/scriptt.js"></script>
+    </body>
 </html>
+        

@@ -1,6 +1,16 @@
 // INI jS
 
-// My profile
+// Greetings
+let userName = prompt("Please enter your name / Silakan Masukkan nama anda :");
+
+if (userName != null && userName != "") {
+    document.getElementById("name-display").innerHTML = `Hi ${userName}, Welcome to my Website ! `;
+} else {
+    document.getElementById("name-display").innerHTML = "Hi guest, Welcome to my Website ! ";
+}
+
+
+// Favorite City
 function showImage(profileClass) {
     let image = document.getElementsByClassName(`icon-profile-${profileClass}`);
     image.style.display = "block";

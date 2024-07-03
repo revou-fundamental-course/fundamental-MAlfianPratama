@@ -1,13 +1,13 @@
 // INI jS
 
 // Greetings
-let userName = prompt("Please enter your name / Silakan Masukkan nama anda :");
+// let userName = prompt("Please enter your name / Silakan Masukkan nama anda :");
 
-if (userName != null && userName != "") {
-    document.getElementById("name-display").innerHTML = `Hi ${userName}, Welcome to my Website ! `;
-} else {
-    document.getElementById("name-display").innerHTML = "Hi guest, Welcome to my Website ! ";
-}
+// if (userName != null && userName != "") {
+//     document.getElementById("name-display").innerHTML = `Hi ${userName}, Welcome to my Website ! `;
+// } else {
+//     document.getElementById("name-display").innerHTML = "Hi guest, Welcome to my Website ! ";
+// }
 
 
 // Favorite City
@@ -35,7 +35,7 @@ setInterval(nextImage, 3000); // gambar berubah setiap 3 detik
 images[0].classList.add('active'); // foto pertama ditampilkan
 
 
-// Massage!
+// Massage! validate form
 const table = document.getElementById('my-table');
 const resultDiv = document.getElementById('result');
 const submitButton = document.getElementById('submit');
@@ -52,7 +52,7 @@ function validateForm() {
 
     return true;
 }
-
+// button = submit result 
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
     if (validateForm()) {

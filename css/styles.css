@@ -27,7 +27,7 @@ p {
     width: 55px;
     border: 1px solid;
     border-radius: 30px;
-    background-image: url(/assets/foto-saya-sendiri.jpg);
+    background-image: url('../assets/foto-saya-sendiri.jpg');
     background-size: cover;
     margin-bottom: 6px;
     margin-left: 6px;
@@ -161,15 +161,15 @@ main>#my-profile{
 }
 
 .icon-profile-1{
-    background-image: url(./assets/photo-gbk.jpg);
+    background-image: url('../assets/photo-gbk.jpg');
 }
 
 .icon-profile-2{
-    background-image: url(./assets/candiprambanan.jpg);
+    background-image: url('../assets/candiprambanan.jpg');
 }
 
 .icon-profile-3{
-    background-image: url(./assets/bromoawan.jpg);
+    background-image: url('../assets/bromoawan.jpg');
 }
 
 .profile-item {

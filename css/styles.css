@@ -161,15 +161,15 @@ main>#my-profile{
 }
 
 .icon-profile-1{
-    background-image: url(/assets/pexels-photo-GBK.jpg);
+    background-image: url(./assets/photo-gbk.jpg);
 }
 
 .icon-profile-2{
-    background-image: url(/assets/pexels-photo-candiprambanan.jpg);
+    background-image: url(./assets/candiprambanan.jpg);
 }
 
 .icon-profile-3{
-    background-image: url(/assets/pexels-photo-bromoawan.jpg);
+    background-image: url(./assets/bromoawan.jpg);
 }
 
 .profile-item {
